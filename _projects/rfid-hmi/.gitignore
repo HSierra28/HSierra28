@@ -1,0 +1,22 @@
+# Doxygen / Sphinx output
+/generated-docs
+/docs/_build/
+/docs/.doctrees
+
+# Compilaciones de firmware
+/src/**/*.o
+/src/**/*.elf
+/src/**/*.bin
+/src/**/*.hex
+
+# VSCode
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Sistema
+.DS_Store
+Thumbs.db
