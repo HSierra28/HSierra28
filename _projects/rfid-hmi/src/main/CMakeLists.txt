@@ -1,0 +1,11 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "app_access.c"
+        "app_hmi.c"
+        "app_rfid.c"
+        "mfrc522.c"
+        "spi_utils.c"
+    INCLUDE_DIRS
+        "../include"
+)
