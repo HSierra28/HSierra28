@@ -18,14 +18,12 @@ void app_rfid_init(void)
     mfrc522_init();
 }
 
-void app_rfid_task(void *pvParameters)
-{
+
+void app_rfid_task(void *pvParameters) {
     mfrc522_uid_t uid;
-    while (1)
-    {
-        if (mfrc522_read_card(&uid))
-        {
-            ESP_LOGI(TAG, "Card detected: %02X %02X %02X %02X",
+    while (1) {
+        if (mfrc522_read_card(&uid)) {
+            ESP_LOGI("RFID", "Card UID: %02X %02X %02X %02X",
                      uid.bytes[0], uid.bytes[1], uid.bytes[2], uid.bytes[3]);
             app_access_verify_uid(uid.bytes);
         }

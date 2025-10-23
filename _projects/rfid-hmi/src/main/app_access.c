@@ -29,17 +29,17 @@ void app_access_init(void)
 void app_access_verify_uid(uint8_t *uid)
 {
     char uid_str[16];
-    snprintf(uid_str,sizeof(uid_str), "%02X%02X%02X%02X", uid[0], uid[1], uid[2], uid[3]);
+    snprintf(uid_str, sizeof(uid_str), "%02X%02X%02X%02X", uid[0], uid[1], uid[2], uid[3]);
 
     for (int i = 0; i < whitelist_size; i++)
     {
         if (memcmp(uid, whitelist[i], 4) == 0)
         {
-            ESP_LOGI(TAG, "Access Granted");
-            app_hmi_show_message("Access Granted", 1);
+            ESP_LOGI(TAG, "Access Granted (UID: %s)", uid_str);
+            app_hmi_show_access(uid_str, "Access Granted", 1);
             return;
         }
     }
-    ESP_LOGI(TAG, "Access Denied");
+    ESP_LOGI(TAG, "Access Denied (UID: %s)", uid_str);
     app_hmi_show_message("Access Denied", 0);
 }

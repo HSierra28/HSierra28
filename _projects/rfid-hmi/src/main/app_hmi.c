@@ -64,6 +64,10 @@ void app_hmi_show_access(const char *uid, const char *msg, uint8_t status)
     uart_write_bytes(UART_PORT, command, strlen(command));
     uart_write_bytes(UART_PORT, (const char *)end_cmd, 3);
 
+    snprintf(command, sizeof(command), "tx1.txt=\"UID: %s\"", uid);
+    uart_write_bytes(UART_PORT, command, strlen(command));
+    uart_write_bytes(UART_PORT, (const char * )end_cmd, 3);
+
     snprintf(command, sizeof(command),
              "t0.pco=%d", status ? 2016 : 63488);  // Verde o rojo
     uart_write_bytes(UART_PORT, command, strlen(command));
