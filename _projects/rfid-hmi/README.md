@@ -39,7 +39,6 @@ The system authenticates users via RFID tags and shows access status on the HMI 
 
 ## 📂 Repository Structure
 - `/src`: Source code (C/C++)  
-- `/hardware`: Schematics and wiring diagrams  
 - `/docs`: Auto-generated documentation (Sphinx + Doxygen)  
 - `/media`: Photos and demo videos  
 - `README.md`: Project overview  
@@ -47,14 +46,13 @@ The system authenticates users via RFID tags and shows access status on the HMI 
 ---
 
 ## ▶️ Demo
-- **Video link:** [Upload demo video here]  
-- **Screenshots:** See `/media`  
+- **Video, photos, and screenshots:** See `/media`  
 
 ---
 
 ## 📖 Documentation
 - [Generated documentation](../generated-docs/html/index.html)  
-- Includes: code architecture, flowcharts, hardware diagrams  
+- Includes: code architecture, flowcharts, hardware datasheets
 
 ---
 
