@@ -3,7 +3,6 @@
  * @brief Main application entry point for RFID-HMI Access Control System.
  * @details Initializes the RFID reader, HMI interface, and access control logic.
  *          Spawns FreeRTOS tasks for RFID scanning and HMI updates.
- *
  * @author Hammurabi Sierra
  * @date 2025/10/15
  */

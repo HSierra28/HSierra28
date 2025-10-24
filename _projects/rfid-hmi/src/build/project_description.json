@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "rfid_nextion_access",
-    "project_version":    "6443814-dirty",
+    "project_version":    "1a662c8-dirty",
     "project_path":       "C:/Users/Hammurabi.Sierra/Documents/Personal/EmbeddedProjects/GitHubProfile/HSierra28/_projects/rfid-hmi/src",
     "idf_path":           "C:/Users/Hammurabi.Sierra/esp/v5.4.1/esp-idf",
     "build_dir":          "C:/Users/Hammurabi.Sierra/Documents/Personal/EmbeddedProjects/GitHubProfile/HSierra28/_projects/rfid-hmi/src/build",
@@ -1195,7 +1195,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "C:/Users/Hammurabi.Sierra/Documents/Personal/EmbeddedProjects/GitHubProfile/HSierra28/_projects/rfid-hmi/src/build/esp-idf/main/libmain.a",
-            "sources": [ "C:/Users/Hammurabi.Sierra/Documents/Personal/EmbeddedProjects/GitHubProfile/HSierra28/_projects/rfid-hmi/src/main/main.c", "C:/Users/Hammurabi.Sierra/Documents/Personal/EmbeddedProjects/GitHubProfile/HSierra28/_projects/rfid-hmi/src/main/app_access.c", "C:/Users/Hammurabi.Sierra/Documents/Personal/EmbeddedProjects/GitHubProfile/HSierra28/_projects/rfid-hmi/src/main/app_hmi.c", "C:/Users/Hammurabi.Sierra/Documents/Personal/EmbeddedProjects/GitHubProfile/HSierra28/_projects/rfid-hmi/src/main/app_rfid.c", "C:/Users/Hammurabi.Sierra/Documents/Personal/EmbeddedProjects/GitHubProfile/HSierra28/_projects/rfid-hmi/src/main/mfrc522.c", "C:/Users/Hammurabi.Sierra/Documents/Personal/EmbeddedProjects/GitHubProfile/HSierra28/_projects/rfid-hmi/src/main/spi_utils.c" ],
+            "sources": [ "C:/Users/Hammurabi.Sierra/Documents/Personal/EmbeddedProjects/GitHubProfile/HSierra28/_projects/rfid-hmi/src/main/main.c", "C:/Users/Hammurabi.Sierra/Documents/Personal/EmbeddedProjects/GitHubProfile/HSierra28/_projects/rfid-hmi/src/main/app_rfid.c", "C:/Users/Hammurabi.Sierra/Documents/Personal/EmbeddedProjects/GitHubProfile/HSierra28/_projects/rfid-hmi/src/main/app_access.c", "C:/Users/Hammurabi.Sierra/Documents/Personal/EmbeddedProjects/GitHubProfile/HSierra28/_projects/rfid-hmi/src/main/app_hmi.c", "C:/Users/Hammurabi.Sierra/Documents/Personal/EmbeddedProjects/GitHubProfile/HSierra28/_projects/rfid-hmi/src/main/mfrc522.c" ],
             "include_dirs": [ "../include" ]
         },
         "mbedtls": {

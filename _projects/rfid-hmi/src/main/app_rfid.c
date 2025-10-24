@@ -3,6 +3,8 @@
  * @brief Implementation of RFID scanning and tag detection.
  * @details This module initializes and communicates with the MFRC522 reader
  *          to detect RFID tags and pass their UIDs to the access control logic.
+ * @author Hammurabi Sierra
+ * @date 2025/10/18
  */
 
 #include "app_rfid.h"

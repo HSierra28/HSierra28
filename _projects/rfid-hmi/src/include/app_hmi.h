@@ -8,6 +8,7 @@
 #define APP_HMI_H_
 
 #include <stdint.h>
+#include <stdbool.h>
 
 /**
  * @brief Initializes the UART connection with the Nextion HMI.
@@ -34,5 +35,21 @@ void app_hmi_show_message(const char *msg, uint8_t status);
  * @param status 1 = granted, 0 = denied.
  */
 void app_hmi_show_access(const char *uid, const char *msg, uint8_t status);
+
+/**
+ * @brief Displays user data when access granted.
+ * @param name Club member name.
+ * @param member_id Internal club membership number.
+ * @param photo Club member photo.
+ * @param access_granted Access granted/denied
+ */
+void app_hmi_show_user_details(const char *name, const char *member_id, int photo_id, bool access_granted);
+
+/**
+ * @brief Return to home screen on HMI
+ */
+void app_hmi_go_home(void);
+
+
 
 #endif /* APP_HMI_H_ */
